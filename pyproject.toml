@@ -10,6 +10,9 @@ packages = [{include = "gaia_api"}]
 python = "^3.10"
 fastapi = "^0.103.2"
 uvicorn = "^0.23.2"
+sqlalchemy = "^2.0.21"
+mysql-connector-python = "^8.1.0"
+requests = "^2.31.0"
 
 
 [build-system]
