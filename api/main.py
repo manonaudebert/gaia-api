@@ -1,9 +1,8 @@
 from fastapi import Depends, FastAPI, Request
 from fastapi.responses import JSONResponse
-from api.routers import post, vote, user, location,comment
 
 from api import dependencies
-
+from api.routers import post, vote, user, location,comment
 
 app = FastAPI(
     title="Gaia API",
