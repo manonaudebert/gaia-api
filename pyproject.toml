@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gaia-api"
+version = "0.1.0"
+description = "Community monitoring app for environmental issues"
+authors = ["blackbear <zoeytu0919@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gaia_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.2"
+uvicorn = "^0.23.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
