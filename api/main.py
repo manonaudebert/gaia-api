@@ -10,6 +10,11 @@ app = FastAPI(
 )
 
 
+
+
+app.include_router(comment.router)
+app.include_router(post.router)
+
 @app.get("/")
 async def root():
     return "hello"
