@@ -6,14 +6,12 @@
 ## Overview
 Gaia API powers all server-side interactions for the Gaia platform. It is a REST-based API that uses [FastAPI](https://fastapi.tiangolo.com/lo/).
 
-API can be accessed via app.shamiri.health using bear token method following OAuth2 protocol
-
 ## Setting up your development environment
 The backend runs on Linux in production so it's expected that you'll be developing on Linux 
 or Mac OS X. If you're using Windows, consider using 
 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install).
 
-Make sure you have the Python 3.8 installed. Any minor version will do. If your
+Make sure you have the Python 3.10.7 installed. Any minor version will do. If your
 system comes with a pre-installed version of Python that is not 3.8, consider using 
 [pyenv](https://github.com/pyenv/pyenv) to manage your development version of 
 python.
