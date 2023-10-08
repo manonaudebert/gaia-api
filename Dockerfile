@@ -18,7 +18,7 @@ ENV PATH="/gaia-api/.venv/bin:${PATH}"
 
 COPY poetry.lock poetry.toml pyproject.toml ./
 
-RUN poetry install --no-dev
+RUN poetry install --no-root
 
 EXPOSE 8080
 
