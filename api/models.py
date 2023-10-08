@@ -2,10 +2,9 @@ import os
 from datetime import datetime
 
 from dotenv import load_dotenv
-from sqlalchemy import (ARRAY, JSON, Boolean, Column, Date, DateTime, Float,
-                        ForeignKey, Integer, LargeBinary, String)
+from sqlalchemy import ( Boolean, Column, DateTime, Float,
+                        ForeignKey, Integer, String)
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy.orm import relationship
 
 Base = declarative_base()

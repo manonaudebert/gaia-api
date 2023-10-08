@@ -14,7 +14,7 @@ router = APIRouter(
 )
 
 @router.get("/", response_model=list[schemas.Vote])
-async def get_all_comment(
+async def get_all_votes(
     commons: Annotated[dict, Depends(dependencies.common_parameters)],
     db: Session = Depends(database.get_db)
 ):

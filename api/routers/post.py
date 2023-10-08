@@ -15,7 +15,7 @@ router = APIRouter(
 )
 
 @router.get("/", response_model=list[schemas.Post])
-async def get_all_comment(
+async def get_all_posts(
     commons: Annotated[dict, Depends(dependencies.common_parameters)],
     db: Session = Depends(database.get_db)
 ):
