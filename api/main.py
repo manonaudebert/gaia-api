@@ -1,7 +1,7 @@
 from fastapi import Depends, FastAPI, Request
 from fastapi.responses import JSONResponse
 
-from api import dependencies
+from api import dependencies,database
 from api.routers import post, vote, user, location,comment
 
 app = FastAPI(
@@ -11,11 +11,11 @@ app = FastAPI(
 
 
 
-
 app.include_router(comment.router)
 app.include_router(post.router)
 
 @app.get("/")
 async def root():
+    
     return "hello"
 

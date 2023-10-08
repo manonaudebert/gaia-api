@@ -11,7 +11,7 @@ from api import dependencies
 
 class _BaseModel(BaseModel):
     class Config:
-        orm_mode=True
+        from_attributes=True
 
 class UserCreate(_BaseModel):
     username : str
