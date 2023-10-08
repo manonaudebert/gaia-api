@@ -89,6 +89,9 @@ development dependencies have licensing that conflicts with liberal proprietary
 usage.
 
 ### Running the app
+*Debugging mode
 ```
 uvicorn api.main:app --reload
 ```
+
+
