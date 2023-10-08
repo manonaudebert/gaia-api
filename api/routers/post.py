@@ -25,3 +25,12 @@ async def get_all_posts(
         .limit(commons["limit"])
         .all()
     )
+
+@router.get("/{post_id}/", response_model=schemas.Post)
+async def get_post_by_id(
+    post_id: int,
+    db: Session = Depends(database.get_db)
+):
+    return (
+        db.query(models.Post).get(post_id)
+    )
