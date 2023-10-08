@@ -77,6 +77,8 @@ class Post(Base):
     locationId = Column(Integer, ForeignKey("location.id"))
     location = relationship("Location", back_populates="posts")
     datetime = Column(DateTime, default=datetime.utcnow)
+    title = Column(String(120),nullable=False)
+    text = Column(String(2000),nullable=False)
     
     
     
