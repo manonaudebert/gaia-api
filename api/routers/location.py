@@ -26,13 +26,13 @@ async def get_all_locations(
         .all()
     )
 
-@router.get("/{location_id}/feed", response_model=list[schemas.Location])
+@router.get("/{location_id}/feed", response_model=list[schemas.Post])
 async def get_feed_from_location(
     location_id: int,
     commons: Annotated[dict, Depends(dependencies.common_parameters)],
     db: Session = Depends(database.get_db)
 ):
-    return (db.query(models.Post).filter_by(location_id=location_id)
+    return (db.query(models.Post).filter_by(locationId=location_id)
             .order_by(desc(models.Post.datetime))
             .offset(commons["skip"])
         .limit(commons["limit"])
