@@ -36,7 +36,7 @@ poetry update
 ```
 To uninstall Poetry:
 ```bash
-python3 install-poetry.py --uninstall
+python install-poetry.py --uninstall
 ```
 
 ### Virtual environments
@@ -51,7 +51,7 @@ environment at the base in the `.venv/` directory, that is if you do not create
 one.
 
 ```bash
-python3 -m venv --prompt venv .venv 
+python -m venv --prompt venv .venv 
 source .venv/bin/activate
 ```
 Once within a virtual environment, install the dependencies:
@@ -87,3 +87,8 @@ To maintain code quality, a couple of linters and formaters are used:
 Note, when running in production, do not install development dependencies. Some
 development dependencies have licensing that conflicts with liberal proprietary
 usage.
+
+### Running the app
+```
+uvicorn api.main:app --reload
+```
