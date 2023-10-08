@@ -1,12 +1,12 @@
 # Gaia API
 
-https://gaia-api-wpdd2.ondigitalocean.app/docs
-
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 
 ## Overview
 Gaia API powers all server-side interactions for the Gaia platform. It is a REST-based API that uses [FastAPI](https://fastapi.tiangolo.com/lo/).
+
+See endpoint here https://gaia-api-wpdd2.ondigitalocean.app/docs
 
 ## Setting up your development environment
 The backend runs on Linux in production so it's expected that you'll be developing on Linux 
